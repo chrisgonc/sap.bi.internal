@@ -1,0 +1,10 @@
+{
+    "role": {
+        "name": "sap.bi.mla.internal.privilege::analytics.all",
+			"schema_privileges":[
+			{
+	    		"privileges": ["SELECT"]
+			}
+			]
+    }
+}
