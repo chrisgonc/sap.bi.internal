@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Variable="http://www.sap.com/ndb/BiModelVariable.ecore" schemaVersion="3.0" dataCategory="CUBE" analyticViewCompatibilityMode="true" cacheInvalidationPeriod="NONE" id="sap.bi.mla.internal.mm.srv::star_transactions" applyPrivilegeType="NONE" enforceSqlExecution="false">
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Variable="http://www.sap.com/ndb/BiModelVariable.ecore" schemaVersion="3.0" dataCategory="CUBE" analyticViewCompatibilityMode="true" cacheInvalidationPeriod="NONE" id="sap.bi.mla.internal.srv.mm::star_transactions" applyPrivilegeType="NONE" enforceSqlExecution="false">
 <descriptions defaultDescription="Star Transactions"/>
 <localVariables>
   <variable parameter="true" id="IP_CT_DATE">
@@ -13,8 +13,8 @@
 </localVariables>
 <variableMappings/>
 <dataSources>
-  <DataSource id="sap.bi.mla.internal.mm.trv::card_transactions">
-    <resourceUri>sap.bi.mla.internal.mm.trv::card_transactions</resourceUri>
+  <DataSource id="sap.bi.mla.internal.trv.mm::card_transactions">
+    <resourceUri>sap.bi.mla.internal.trv.mm::card_transactions</resourceUri>
   </DataSource>
 </dataSources>
 <calculationViews>
@@ -31,7 +31,7 @@
       <viewAttribute id="CT_STATUS"/>
     </viewAttributes>
     <calculatedViewAttributes/>
-    <input node="sap.bi.mla.internal.mm.trv::card_transactions"/>
+    <input node="sap.bi.mla.internal.trv.mm::card_transactions"/>
     <filter>&quot;CT_DATE&quot;&gt;='$$IP_CT_DATE$$'</filter>
   </calculationView>
 </calculationViews>
@@ -81,7 +81,7 @@
   <restrictedMeasures/>
   <localDimensions/>
   <sharedDimensions>
-    <logicalJoin associatedObjectUri="sap.bi.mla.internal.mm.trv::card">
+    <logicalJoin associatedObjectUri="sap.bi.mla.internal.trv.mm::card">
       <attributes>
         <attributeRef>CT_CARD_ID$local</attributeRef>
       </attributes>
@@ -91,7 +91,7 @@
       <properties cardinality="CN_N" joinType="referential" joinOperator="Equal"/>
       <associatedAttributeFeatures/>
     </logicalJoin>
-    <logicalJoin associatedObjectUri="sap.bi.mla.internal.sd.trv::merchant">
+    <logicalJoin associatedObjectUri="sap.bi.mla.internal.trv.sd::merchant">
       <attributes>
         <attributeRef>CT_MER_ID$local</attributeRef>
       </attributes>
@@ -101,7 +101,7 @@
       <properties cardinality="CN_N" joinType="referential" joinOperator="Equal"/>
       <associatedAttributeFeatures/>
     </logicalJoin>
-    <logicalJoin associatedObjectUri="sap.bi.mla.internal.pm.trv::customer">
+    <logicalJoin associatedObjectUri="sap.bi.mla.internal.trv.pm::customer">
       <attributes>
         <attributeRef>CT_CUST_ID$local</attributeRef>
       </attributes>
@@ -127,15 +127,15 @@
       <upperLeftCorner x="830" y="294"/>
       <rectangleSize width="179"/>
     </shape>
-    <shape modelObjectName="sap.bi.mla.internal.mm.trv::card" modelObjectNameSpace="StarJoinViewNodeSharedCV" modelObjectType="repository">
+    <shape modelObjectName="sap.bi.mla.internal.trv.mm::card" modelObjectNameSpace="StarJoinViewNodeSharedCV" modelObjectType="repository">
       <upperLeftCorner x="620" y="30"/>
       <rectangleSize width="210"/>
     </shape>
-    <shape modelObjectName="sap.bi.mla.internal.sd.trv::merchant" modelObjectNameSpace="StarJoinViewNodeSharedCV" modelObjectType="repository">
+    <shape modelObjectName="sap.bi.mla.internal.trv.sd::merchant" modelObjectNameSpace="StarJoinViewNodeSharedCV" modelObjectType="repository">
       <upperLeftCorner x="1220" y="30"/>
       <rectangleSize width="241"/>
     </shape>
-    <shape modelObjectName="sap.bi.mla.internal.pm.trv::customer" modelObjectNameSpace="StarJoinViewNodeSharedCV" modelObjectType="repository">
+    <shape modelObjectName="sap.bi.mla.internal.trv.pm::customer" modelObjectNameSpace="StarJoinViewNodeSharedCV" modelObjectType="repository">
       <upperLeftCorner x="1520" y="30"/>
       <rectangleSize width="250"/>
     </shape>

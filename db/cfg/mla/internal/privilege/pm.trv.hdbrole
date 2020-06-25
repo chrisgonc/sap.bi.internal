@@ -1,9 +1,0 @@
-{
-    "role": {
-        "name": "sap.bi.mla.internal.privilege::pm.trv",
-			"object_privileges":[  
-			{"name":"sap.bi.mla.internal.pm.trv::customer","type":"VIEW","privileges":[ "SELECT" ]},
-			{"name":"sap.bi.mla.internal.pm.trv::customer_anonymized","type":"VIEW","privileges":[ "SELECT" ]}
-			]
-    }
-}

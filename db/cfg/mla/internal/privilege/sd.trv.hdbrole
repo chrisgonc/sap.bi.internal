@@ -1,8 +1,0 @@
-{
-    "role": {
-        "name": "sap.bi.mla.internal.privilege::sd.trv",
-			"object_privileges":[  
-			{"name":"sap.bi.mla.internal.sd.trv::merchant","type":"VIEW","privileges":[ "SELECT"]}
-			]
-    }
-}

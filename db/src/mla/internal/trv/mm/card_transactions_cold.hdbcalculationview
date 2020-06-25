@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="sap.bi.mla.internal.mm.trv::card_transactions_cold" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="sap.bi.mla.internal.trv.mm::card_transactions_cold" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
 <descriptions defaultDescription="Card Transactions (Cold)"/>
 <localVariables/>
 <variableMappings/>
 <dataSources>
-  <DataSource id="sap.bi.mla.internal.mm.sv::VW_CARD_TRANSACTIONS_COLD">
-    <resourceUri>sap.bi.mla.internal.mm.sv::VW_CARD_TRANSACTIONS_COLD</resourceUri>
+  <DataSource id="sap.bi.mla.internal.sv.mm::VW_CARD_TRANSACTIONS_COLD">
+    <resourceUri>sap.bi.mla.internal.sv.mm::VW_CARD_TRANSACTIONS_COLD</resourceUri>
   </DataSource>
 </dataSources>
 <calculationViews/>
-<logicalModel id="sap.bi.mla.internal.mm.sv::VW_CARD_TRANSACTIONS_COLD">
+<logicalModel id="sap.bi.mla.internal.sv.mm::VW_CARD_TRANSACTIONS_COLD">
   <attributes>
     <attribute id="CT_ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="Transaction ID"/>

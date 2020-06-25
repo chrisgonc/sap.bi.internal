@@ -2,7 +2,7 @@
     "role": {
         "name": "sap.bi.mla.internal.privilege::trv.all",
         	"schema_roles":[
-        	{"names": ["sap.bi.mla.internal.privilege::mm.trv", "sap.bi.mla.internal.privilege::pm.trv", "sap.bi.mla.internal.privilege::sd.trv"]}
+        	{"names": ["sap.bi.mla.internal.privilege::trv.mm", "sap.bi.mla.internal.privilege::trv.pm", "sap.bi.mla.internal.privilege::trv.sd"]}
 			]
     }
 }

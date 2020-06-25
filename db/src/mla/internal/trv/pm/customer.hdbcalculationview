@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="sap.bi.mla.internal.pm.trv::customer" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="sap.bi.mla.internal.trv.pm::customer" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
 <descriptions defaultDescription="Customer"/>
 <localVariables/>
 <variableMappings/>
 <dataSources>
-  <DataSource id="sap.bi.mla.internal.pm.sv::VW_CUSTOMER">
-    <resourceUri>sap.bi.mla.internal.pm.sv::VW_CUSTOMER</resourceUri>
+  <DataSource id="sap.bi.mla.internal.sv.pm::VW_CUSTOMER">
+    <resourceUri>sap.bi.mla.internal.sv.pm::VW_CUSTOMER</resourceUri>
   </DataSource>
 </dataSources>
 <calculationViews/>
-<logicalModel id="sap.bi.mla.internal.pm.sv::VW_CUSTOMER">
+<logicalModel id="sap.bi.mla.internal.sv.pm::VW_CUSTOMER">
   <attributes>
     <attribute id="CUST_ID" key="true" order="1" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="Customer ID"/>
